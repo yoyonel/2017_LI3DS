@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QtCreatorSession>
+<!-- Written by QtCreator 4.2.1, 2017-02-25T23:17:57. -->
+<qtcreator>
+ <data>
+  <variable>CascadeSetActive</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>Color</variable>
+  <value type="QString">#666666</value>
+ </data>
+ <data>
+  <variable>EditorSettings</variable>
+  <value type="QByteArray">AAAAD0VkaXRvck1hbmFnZXJWNAAAAAIAAACIAC8AcgBvAG8AdAAvAGMAYQB0AGsAaQBuAF8AdwBzAC8AcwByAGMALwBzAGIAZwBfAHIAbwBzAF8AZAByAGkAdgBlAHIALwBzAHIAYwAvAHMAYgBnAHcAcgBhAHAAcABlAHIALwBzAHIAYwAvAHMAYgBnAHcAcgBhAHAAcABlAHIALgBjAHAAcAAAAAwAAAAAGAAAAAEAAAAJAAAAAAAAABYAAAAVAAAAAAAAAJ4ALwByAG8AbwB0AC8AYwBhAHQAawBpAG4AXwB3AHMALwBzAHIAYwAvAHMAYgBnAF8AcgBvAHMAXwBkAHIAaQB2AGUAcgAvAHMAcgBjAC8AcwBiAGcAbABvAGcAcABhAHIAcwBlAHIALwBzAGkAbQBwAGwAZQAvAHMAcgBjAC8AcwBiAGcAbABvAGcAcABhAHIAcwBlAHIALgBjAHAAcAAAAAwAAAAAGAAAAAEAAAAMAAAAAAAAAB0AAAAFAAAAAAAAAAIAAACeAC8AcgBvAG8AdAAvAGMAYQB0AGsAaQBuAF8AdwBzAC8AcwByAGMALwBzAGIAZwBfAHIAbwBzAF8AZAByAGkAdgBlAHIALwBzAHIAYwAvAHMAYgBnAGwAbwBnAHAAYQByAHMAZQByAC8AcwBpAG0AcABsAGUALwBzAHIAYwAvAHMAYgBnAGwAbwBnAHAAYQByAHMAZQByAC4AYwBwAHAAAAAgAHMAYgBnAGwAbwBnAHAAYQByAHMAZQByAC4AYwBwAHAAAAATQ3BwRWRpdG9yLkMrK0VkaXRvcgAAAIgALwByAG8AbwB0AC8AYwBhAHQAawBpAG4AXwB3AHMALwBzAHIAYwAvAHMAYgBnAF8AcgBvAHMAXwBkAHIAaQB2AGUAcgAvAHMAcgBjAC8AcwBiAGcAdwByAGEAcABwAGUAcgAvAHMAcgBjAC8AcwBiAGcAdwByAGEAcABwAGUAcgAuAGMAcABwAAAAHABzAGIAZwB3AHIAYQBwAHAAZQByAC4AYwBwAHAAAAATQ3BwRWRpdG9yLkMrK0VkaXRvcgAAAPkAAAANY3VycmVudGVkaXRvcgAAAJ4ALwByAG8AbwB0AC8AYwBhAHQAawBpAG4AXwB3AHMALwBzAHIAYwAvAHMAYgBnAF8AcgBvAHMAXwBkAHIAaQB2AGUAcgAvAHMAcgBjAC8AcwBiAGcAbABvAGcAcABhAHIAcwBlAHIALwBzAGkAbQBwAGwAZQAvAHMAcgBjAC8AcwBiAGcAbABvAGcAcABhAHIAcwBlAHIALgBjAHAAcAAAACYAQwBwAHAARQBkAGkAdABvAHIALgBDACsAKwBFAGQAaQB0AG8AcgAAABgAAAABAAAADAAAAAAAAAAdAAAABQAAAAA=</value>
+ </data>
+ <data>
+  <variable>ProjectDependencies</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+ <data>
+  <variable>ProjectList</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">/root/catkin_ws/src/ros_velodyne/velodyne_driver/CMakeLists.txt</value>
+   <value type="QString">/root/catkin_ws/src/ros_velodyne/velodyne_gps_imu/CMakeLists.txt</value>
+   <value type="QString">/root/catkin_ws/src/ros_velodyne/velodyne_msgs/CMakeLists.txt</value>
+   <value type="QString">/root/catkin_ws/src/ros_velodyne/velodyne_pointcloud/CMakeLists.txt</value>
+   <value type="QString">/root/catkin_ws/src/ros_velodyne/velodyne/CMakeLists.txt</value>
+   <value type="QString">/root/catkin_ws/src/sbg_ros_driver/CMakeLists.txt</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>StartupProject</variable>
+  <value type="QString">/root/catkin_ws/src/ros_velodyne/velodyne_driver/CMakeLists.txt</value>
+ </data>
+ <data>
+  <variable>value-ActiveMode</variable>
+  <value type="QString">Edit</value>
+ </data>
+ <data>
+  <variable>value-Breakpoints</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>value-DefaultFormats</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+ <data>
+  <variable>value-IndividualFormats</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+ <data>
+  <variable>value-ProjectTree.ExpandData</variable>
+  <valuelist type="QVariantList">
+   <valuelist type="QVariantList">
+    <value type="QString">session</value>
+    <value type="QString">session</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/root/catkin_ws/src/sbg_ros_driver</value>
+    <value type="QString">sbg_driver</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/root/catkin_ws/src/sbg_ros_driver/src</value>
+    <value type="QString">src</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/root/catkin_ws/src/sbg_ros_driver/src/sbglogparser</value>
+    <value type="QString">sbglogparser</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/root/catkin_ws/src/sbg_ros_driver/src/sbglogparser/simple</value>
+    <value type="QString">simple</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/root/catkin_ws/src/sbg_ros_driver/src/sbglogparser/simple/src</value>
+    <value type="QString">src</value>
+   </valuelist>
+  </valuelist>
+ </data>
+ <data>
+  <variable>value-TaskWindow.Categories</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">Task.Category.QmlAnalysis</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>value-TaskWindow.IncludeWarnings</variable>
+  <value type="bool">true</value>
+ </data>
+ <data>
+  <variable>value-Watchers</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>valueKeys</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">ActiveMode</value>
+   <value type="QString">Breakpoints</value>
+   <value type="QString">DefaultFormats</value>
+   <value type="QString">IndividualFormats</value>
+   <value type="QString">ProjectTree.ExpandData</value>
+   <value type="QString">TaskWindow.Categories</value>
+   <value type="QString">TaskWindow.IncludeWarnings</value>
+   <value type="QString">Watchers</value>
+  </valuelist>
+ </data>
+</qtcreator>

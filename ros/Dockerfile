@@ -7,10 +7,8 @@ WORKDIR /root
 
 ### CONFIGS
 # APT CONF
-#COPY apt.conf /etc/apt/apt.conf
 COPY apt.conf /etc/apt/apt.conf
 # GIT CONFIG
-#COPY .gitconfig /root/.gitconfig
 COPY .gitconfig .
 
 ### APT
@@ -30,10 +28,37 @@ RUN tar xzvf /cmake-3.8.0-rc1.tar.Z
 RUN cd cmake-3.8.0-rc1 && ./configure && make -j3 && make install
 RUN rm /cmake-3.8.0-rc1.tar.Z && rm -r cmake-3.8.0-rc1
 
-# Install Zsh
-# RUN git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh \
-#       && cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc \
-#       && chsh -s /bin/zsh
+### Install Zsh
+RUN apt-get update && 			\
+    apt-get install -y 			\
+    zsh
+RUN git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh \
+      && cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc \
+      && chsh -s /bin/zsh
+
+### add-apt-repository
+RUN apt-get install -y software-properties-common
+
+
+### catkin_tools
+RUN apt-get install -y python-catkin-tools
+
+### wget & pip
+RUN apt-get install -y wget python-pip
+
+### VIM: Fisa
+#
+RUN apt-get install -y curl vim exuberant-ctags git ack-grep
+RUN pip install pep8 flake8 pyflakes isort yapf
+RUN wget https://raw.github.com/fisadev/fisa-vim-config/master/.vimrc -O ~/.vimrc
+#
+COPY .vim /root/.vim
+COPY .viminfo /root/.viminfo
+
+# ROSSerial - Arduino
+RUN apt-get install -y  \
+    ros-indigo-rosserial-arduino \
+    ros-indigo-rosserial
 
 # # Purge/clean apt
 # RUN apt-get clean                   \

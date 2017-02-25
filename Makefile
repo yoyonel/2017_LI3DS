@@ -22,9 +22,9 @@ clean-volumes:              \
 	clean-ins-volumes
 
 clean-rosserial-images:
-	(cd rosserial/latest; rmi.sh 2> /dev/null || true)
+	(cd rosserial; rmi.sh 2> /dev/null || true)
 clean-rosserial-volumes:
-	(cd rosserial/latest; delete_volume.sh 2> /dev/null || true)
+	(cd rosserial; delete_volume.sh 2> /dev/null || true)
 
 clean-arduino-images:
 	(cd arduino; rmi.sh 2> /dev/null || true)
@@ -112,9 +112,9 @@ dev-images:
 
 dev-run:
 	(  echo; echo ""; echo;		\
-		cd dev;			\
+		cd dev;					\
 		xhost +;				\
-		run.sh "bash"	\
+		run.sh "zsh"			\
 	)
 
 ##-------------
@@ -129,6 +129,13 @@ qtcreator-run:
 	(  echo; echo ""; echo;		\
 		cd qtcreator;			\
 		xhost +;				\
+		run.sh 					\
+	)
+
+qtcreator-shell:
+	(  echo; echo ""; echo;		\
+		cd qtcreator;			\
+		xhost +;				\
 		run.sh "zsh"			\
 	)
 
@@ -136,19 +143,22 @@ qtcreator-run:
 
 rosserial:  ## rosserial
 rosserial: rosserial-all
-rosserial-all: ros rosserial-volumes rosserial-images
+# rosserial-all: ros rosserial-volumes rosserial-images
 
-# rosserial-all: dev rosserial-images
+rosserial-all: dev rosserial-images
 	
 rosserial-volumes:
 	(cd rosserial; create_volume.sh)
 
-rosserial-images: rosserial-volumes
-	(cd rosserial; build.sh; run.sh )
+# rosserial-images: rosserial-volumes
+# 	(cd rosserial; build.sh; run.sh )
 	# (cd rosserial/latest; build.sh; run.sh )
 
-# rosserial-images:
-# 	(cd rosserial; build.sh; run.sh )
+rosserial-images:
+	(cd rosserial; build.sh; run.sh )
+
+rosserial-shell:
+	(cd rosserial; run.sh "zsh")
 
 ##-------------
 ##| ARDUINO   |
@@ -168,21 +178,35 @@ arduino-images: rosserial-images
 arduino-volumes: rosserial-volumes
 
 arduino-clean:
-	(cd arduino; run.sh 'bash -c "/root/clean.sh"')
+	(cd arduino; run.sh 'bash -c "/root/LI3DS_ARDUINO/clean.sh"')
 
 arduino-configure:
-	(cd arduino; run.sh 'bash -c "/root/configure.sh"')
+	(cd arduino; run.sh 'bash -c "/root/LI3DS_ARDUINO/configure.sh"')
 
 arduino-build:
-	(cd arduino; run.sh 'bash -c "/root/build.sh"')
+	(cd arduino; run.sh 'bash -c "/root/LI3DS_ARDUINO/build.sh"')
 
 arduino-upload:
-	(cd arduino; run.sh 'bash -c "/root/upload.sh"')
+	(cd arduino; run.sh 'bash -c "/root/LI3DS_ARDUINO/upload.sh"')
 
 arduino-run:
 	@(  echo; echo "Type 'source /opt/ros/indigo/setup.bash' to set env. vars"; echo;   \
 		docker exec -it rosnode_li3ds_arduino bash                                      \
 	)
+
+arduino-shell:
+	(cd arduino; run.sh 'zsh')
+
+###
+
+arduino-dev: arduino-dev-all
+arduino-dev-all: dev arduino-dev-images
+
+arduino-dev-images:
+	(cd arduino-dev; build.sh)
+
+arduino-dev-shell:
+	(cd arduino-dev; run.sh 'bash')
 
 ##-------------
 ##| INS       |

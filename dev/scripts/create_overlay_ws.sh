@@ -12,7 +12,8 @@
 TUPLE_PACKAGES="(
 			(ros_velodyne, 					https://github.com/yoyonel/ros_velodyne.git)
 			(ros_velodyne_configuration,	https://github.com/yoyonel/ros_velodyne_configuration.git)
-			(sbg_ros_driver,	https://github.com/yoyonel/sbg_ros_driver.git)
+			(sbg_ros_driver,				https://github.com/yoyonel/sbg_ros_driver.git)
+			(ros_arduino,					https://github.com/yoyonel/li3ds-ros_arduino.git)
 			)"
 
 ws_init_workspace() {

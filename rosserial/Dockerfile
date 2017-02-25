@@ -9,12 +9,12 @@ RUN apt-get update && \
 # Set Arduino-CMake from ros-indigo-rosserial-arduino
 ENV ARDUINOCMAKE_DIR /opt/ros/indigo/share/rosserial_arduino/arduino-cmake
 
-# Build our catkin workspace from the /catkin_ws directory
-WORKDIR /catkin_ws
-
 #
 COPY scripts/generate_ros_lib.sh /root
 RUN chmod +x /root/generate_ros_lib.sh
+
+# Build our catkin workspace from the /catkin_ws directory
+WORKDIR /root/catkin_ws
 
 # url: https://docs.docker.com/engine/reference/builder/
 # Lancement du script de generation du répertoire 'ros_lib'

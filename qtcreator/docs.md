@@ -74,3 +74,36 @@ $ qtcreator.sh ${ROS_CATKIN_WS}/src/.
 Il reste à transferer une font qui va bien
 
 Transférer des settings de QtCreator qui vont bien (font, hightlight, ...)
+
+./qtcreator-4.2.1/bin/qtcreator.sh -noload Welcome -noload QmlDesigner -noload QmlProfiler
+${ROS_CATKIN_WS}/src/.
+-DCATKIN_DEVEL_PREFIX=/root/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/root/catkin_ws/install -G Unix Makefiles
+
+/opt/qt57/bin/qtcreator-wrapper -noload Welcome -noload QmlDesigner -noload QmlProfiler
+
+	#!/bin/sh -e
+	#
+	# rc.local
+	#
+	# This script is executed at the end of each multiuser runlevel.
+	# Make sure that the script will "exit 0" on success or any other
+	# value on error.
+	#
+	# In order to enable or disable this script just change the execution
+	# bits.
+	#
+	# By default this script does nothing.
+
+	echo 0 | tee /proc/sys/kernel/yama/ptrace_scope
+
+	exit 0
+
+https://github.com/ros-industrial/ros_qtc_plugin/wiki/3.-Setup-Qt-Creator-for-ROS
+
+
+cd catkin_ws
+catkin init --workspace ../overlay_ws
+ln -s ${ROS_OVERLAY_WS}/src .
+catkin config --init
+catkin build
+catkin build
