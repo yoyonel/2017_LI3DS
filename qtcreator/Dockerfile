@@ -1,5 +1,6 @@
 FROM li3ds/dev
 
+# url: https://github.com/phusion/baseimage-docker/issues/58
 ENV DEBIAN_FRONTEND noninteractive
 
 USER root

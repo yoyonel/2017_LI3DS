@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorCMakeTools>
-<!-- Written by QtCreator 4.2.1, 2017-02-25T23:17:57. -->
+<!-- Written by QtCreator 4.2.1, 2017-02-26T00:08:26. -->
 <qtcreator>
  <data>
   <variable>CMakeTools.0</variable>
   <valuemap type="QVariantMap">
    <value type="bool" key="AutoDetected">true</value>
    <value type="bool" key="AutoRun">true</value>
-   <value type="QString" key="Binary">/usr/local/bin/cmake</value>
-   <value type="QString" key="DisplayName">System CMake at /usr/local/bin/cmake</value>
-   <value type="QString" key="Id">{06420e0f-6613-43c2-b7ef-39bdd374df2a}</value>
+   <value type="QString" key="Binary">/usr/bin/cmake</value>
+   <value type="QString" key="DisplayName">System CMake at /usr/bin/cmake</value>
+   <value type="QString" key="Id">{368d7aca-c042-4d1f-832a-6cce49e358ab}</value>
   </valuemap>
  </data>
  <data>
@@ -17,9 +17,9 @@
   <valuemap type="QVariantMap">
    <value type="bool" key="AutoDetected">true</value>
    <value type="bool" key="AutoRun">true</value>
-   <value type="QString" key="Binary">/usr/bin/cmake</value>
-   <value type="QString" key="DisplayName">System CMake at /usr/bin/cmake</value>
-   <value type="QString" key="Id">{368d7aca-c042-4d1f-832a-6cce49e358ab}</value>
+   <value type="QString" key="Binary">/usr/local/bin/cmake</value>
+   <value type="QString" key="DisplayName">System CMake at /usr/local/bin/cmake</value>
+   <value type="QString" key="Id">{06420e0f-6613-43c2-b7ef-39bdd374df2a}</value>
   </valuemap>
  </data>
  <data>

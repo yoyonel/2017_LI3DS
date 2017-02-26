@@ -107,3 +107,20 @@ ln -s ${ROS_OVERLAY_WS}/src .
 catkin config --init
 catkin build
 catkin build
+
+
+urls:
+- http://answers.ros.org/question/67244/qtcreator-with-catkin/
+
+- http://forum.teamspeak.com/threads/122127-quot-QSslSocket-cannot-resolve-SSLv2_client_method-quot-Can-t-connect-to-any-server
+-- http://askubuntu.com/questions/77256/i-want-to-install-libssl-0-9-8
+
+- https://github.com/ros-industrial/ros_qtc_plugin
+-- https://github.com/ros-industrial/ros_qtc_plugin/wiki/1.-How-to-Install-(Users)
+-- http://askubuntu.com/questions/493460/how-to-install-add-apt-repository-using-the-terminal
+-- https://github.com/ros-industrial/ros_qtc_plugin/issues/46
+-- https://launchpad.net/~beineri/+archive/ubuntu/opt-qt571-trusty
+-- https://github.com/alexpana/qt-creator-wombat-theme
+-- http://doc.qt.io/qtcreator/creator-clang-codemodel.html
+
+- http://wiki.ros.org/rosserial_arduino/Tutorials/CMake

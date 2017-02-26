@@ -50,6 +50,7 @@ RUN apt-get install -y wget python-pip
 #
 RUN apt-get install -y curl vim exuberant-ctags git ack-grep
 RUN pip install pep8 flake8 pyflakes isort yapf
+# url: http://stackoverflow.com/questions/1078524/how-to-specify-the-location-with-wget
 RUN wget https://raw.github.com/fisadev/fisa-vim-config/master/.vimrc -O ~/.vimrc
 #
 COPY .vim /root/.vim

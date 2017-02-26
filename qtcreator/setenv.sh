@@ -14,3 +14,5 @@ DOCKER_RUN_OPTIONS+=" -v li3ds_dev_overlay_ws:/root/overlay_ws "
 DOCKER_RUN_OPTIONS+=" -v li3ds_dev_catkin_ws:/root/catkin_ws "
 
 DOCKER_RUN_OPTIONS+=" -v $(realpath .config):/root/.config "
+# url: https://forums.docker.com/t/gdb-breakpoints-dont-work-error-disabling-address-space-randomization/14365/2
+DOCKER_RUN_OPTIONS+=" --security-opt seccomp=unconfined "
